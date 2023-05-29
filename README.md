@@ -9,7 +9,7 @@
 
 ## Sobre o projeto
 
-Este é um projeto desenvolvido como desafio para o teste de estagio para a empresa brainy.digital. Consiste em um crud simples utilizando o framework laravel na versão 9.x  
+Este é um projeto desenvolvido para ajudaras pessoas necessitadas de doação de sangue. Foi desenvolvidoe pensado junto com lideres da Igreja de Jesus Cristo dos Santos do sÚltimos dias i=o qual em seu back-end foi utilizado o framework laravel na versão 9.x  
 
 
 ## Descrição de comandos para executar o projeto 
