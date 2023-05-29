@@ -255,6 +255,10 @@
     <!-- Bootstrap core JavaScript-->
     <script src="{{ asset('assets/vendor/jquery/jquery.min.js') }}"></script>
 
+    <script src="{{ asset('assets/vendor/bootstrap/js/popper.min.js') }}"></script>
+
+    <script src="{{ asset('assets/vendor/bootstrap/js/bootstrap.js') }}"></script>
+
     <!-- Core plugin JavaScript-->
     <script src="{{ asset('assets/vendor/jquery-easing/jquery.easing.min.js') }}"></script>
 
