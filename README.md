@@ -9,7 +9,7 @@
 
 ## Sobre o projeto
 
-Este é um projeto desenvolvido para ajudar as pessoas necessitadas de doação de sangue. Foi desenvolvidoe pensado junto com lideres da Igreja de Jesus Cristo dos Santos do sÚltimos dias i=o qual em seu back-end foi utilizado o framework laravel na versão 9.x  
+Este é um projeto desenvolvido para ajudar as pessoas necessitadas de doação de sangue. Foi desenvolvido e pensado junto com lideres da Igreja de Jesus Cristo dos Santos do sÚltimos dias i=o qual em seu back-end foi utilizado o framework laravel na versão 9.x  
 
 
 ## Descrição de comandos para executar o projeto 
