@@ -19,8 +19,14 @@ use Illuminate\Support\Facades\Route;
     /*
     * Donors Routes
     */
+    Route::get('/donors/delete/{id}', [DonorsController::class, 'destroy'])->name('donors.destroy');
+    Route::put('/donors/{id}', [DonorsController::class, 'update'])->name('donors.update');
+    Route::get('/donors/{id}/edit', [DonorsController::class, 'edit'])->name('donors.edit');
     Route::get('/donors', [DonorsController::class, 'index'])->name('donors.index');
+    Route::get('/donors/create', [DonorsController::class, 'create'])->name('donors.create');
     Route::post('/donors', [DonorsController::class, 'store'])->name('donors.store');
+    Route::post('/donors/save', [DonorsController::class, 'save'])->name('donors.save');
+    Route::get('/export', [DonorsController::class, 'export'])->name('donors.export');
 
     /**
     * Dashboard Routes
