@@ -19,6 +19,10 @@ header{
     line-height: 10px;
 }
 
+.sub-title{
+    text-decoration: underline !important;
+}
+
 li{
     display: inline-block;
     margin: 20px;

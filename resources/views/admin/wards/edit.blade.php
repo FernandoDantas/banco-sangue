@@ -1,6 +1,6 @@
 @extends('admin.layouts.app')
 
-@section('title', "Edição do doador {$donor->name}")
+@section('title', "Edição da ala/ramo {$ward->name}")
 
 @section('content')
 <!-- Begin Page Content -->
@@ -8,8 +8,8 @@
 
      <!-- Page Heading -->
      <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-2 text-gray-800">Edição do doador {{ $donor->name}}</h1>
-            <a href="{{route('donors.index')}}" class="d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-arrow-left fa-sm text-white-50"></i> Doadores</a>
+        <h1 class="h3 mb-2 text-gray-800">Edição da ala/ramo {{ $ward->name}}</h1>
+            <a href="{{route('wards.index')}}" class="d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-arrow-left fa-sm text-white-50"></i> Alas/Ramos</a>
     </div>
 
     <div class="row">
@@ -17,9 +17,9 @@
 
             @include('includes.validations-form')
 
-            <form action="{{route('donors.update', $donor->id)}}" method="post">
+            <form action="{{route('wards.update', $ward->id)}}" method="post">
                 @method('PUT')
-                @include('admin.donors._partials.form')
+                @include('admin.wards._partials.form')
                 <button type="submit" class="btn btn-primary shadow-sm">Editar</button>
             </form>
         </div>

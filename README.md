@@ -25,6 +25,9 @@ Ao baixar pela primeira vez pelo github será necessário instalar todas as dep�
 Foi criado os controllers e requests com os comandos abaixo:
 - php artisan make:controller UserController
 
+Para criar um controller como resource foi utilizaod o comando:
+- php artisan make:controller PermissionsController --resource
+
 Foi criado os models com os seguintes comandos
 - php artisan make:model Pessoa --seed --factory --migration
 

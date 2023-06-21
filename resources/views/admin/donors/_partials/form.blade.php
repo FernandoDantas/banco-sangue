@@ -29,14 +29,15 @@
     <div class="form-group col-md-4">
         <label for="email">Ala/Ramo</label>
         <select id="ala" class="form-control" name="ward" value="{{$donor->ward ?? old('ward')}}">
-            <option value="Liberdade">Ala Liberdade</option>
-            <option value="Jardin Paulistano">Ala Jardin Paulistano</option>
-            <option value="Presidente Médice">Ala Presidente Médice</option>
-            <option value="Prata">Ala Prata</option>
-            <option value="Bodocongó">Ala Bodocongó</option>
-            <option value="Malvinas">Ala Malvinas</option>
-            <option value="Sítio Lucas">Ala Sítio Lucas</option>
-            <option value="Queimadas">Ala Queimadas</option>
+            <option value="Liberdade" {{ $donor->ward == 'Liberdade' ? 'selected' : '' }}>Ala Liberdade</option>
+            <option value="Jardin Paulistano" {{ $donor->ward == 'Jardin Paulistano' ? 'selected' : '' }}>Ala Jardin Paulistano</option>
+            <option value="Presidente Médice" {{ $donor->ward == 'Presidente Médice' ? 'selected' : '' }}>Ala Presidente Médice</option>
+            <option value="Prata" {{ $donor->ward == 'Prata' ? 'selected' : '' }}>Ala Prata</option>
+            <option value="Bodocongó" {{ $donor->ward == 'Bodocongó' ? 'selected' : '' }}>Ala Bodocongó</option>
+            <option value="Malvinas" {{ $donor->ward == 'Malvinas' ? 'selected' : '' }}>Ala Malvinas</option>
+            <option value="Sítio Lucas" {{ $donor->ward == 'Sítio Lucas' ? 'selected' : '' }}>Ala Sítio Lucas</option>
+            <option value="Queimadas" {{ $donor->ward == 'Queimadas' ? 'selected' : '' }}>Ala Queimadas</option>
+            <option value="Não Membro" {{ $donor->ward == 'Não Membro' ? 'selected' : '' }}>Não Membro</option>
         </select>
     </div>
 
@@ -47,15 +48,16 @@
 
     <div class="form-group col-md-4">
         <label>Qual o tipo sanguíneo?</label>
-        <select id="sangue" class="form-control" name="blood" value="{{$donor->date ?? old('blood')}}">
-            <option value="O+">O Positivo</option>
-            <option value="O-">O Negativo</option>
-            <option value="A+">A Positivo</option>
-            <option value="A-">A Negativo</option>
-            <option value="B+">B Positivo</option>
-            <option value="B-">B Negativo</option>
-            <option value="AB+">AB Positivo</option>
-            <option value="AB-">AB Negativo</option>
+        <select id="sangue" class="form-control" name="blood" value="{{$donor->blood ?? old('blood')}}">
+            <option value="O+" {{ $donor->blood == 'O+' ? 'selected' : '' }}>O Positivo</option>
+            <option value="O-" {{ $donor->blood == 'O-' ? 'selected' : '' }}>O Negativo</option>
+            <option value="A+" {{ $donor->blood == 'A+' ? 'selected' : '' }}>A Positivo</option>
+            <option value="A-" {{ $donor->blood == 'A-' ? 'selected' : '' }}>A Negativo</option>
+            <option value="B+" {{ $donor->blood == 'B+' ? 'selected' : '' }}>B Positivo</option>
+            <option value="B-" {{ $donor->blood == 'B-' ? 'selected' : '' }}>B Negativo</option>
+            <option value="AB+" {{ $donor->blood == 'AB+' ? 'selected' : '' }}>AB Positivo</option>
+            <option value="AB-" {{ $donor->blood == 'AB-' ? 'selected' : '' }}>AB Negativo</option>
+            <option value="Qualquer tipo" {{ $donor->blood == 'Qualquer tipo' ? 'selected' : '' }}>Qualquer tipo</option>
         </select>
     </div>
   </div>

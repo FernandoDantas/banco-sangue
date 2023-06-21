@@ -50,6 +50,12 @@ class DonorsController extends Controller
 
         //$data['password'] = bcrypt($request->password);
 
+        $age = ($request['age']);
+        if($age < 18){
+            Alert::error('Ooops', 'Você ainda não é maior de idade!');
+            return redirect()->back();
+        }
+
         $donor = $this->model->create($data);
         //$name = $donor['name'];
 
@@ -66,6 +72,12 @@ class DonorsController extends Controller
         $data = $request->all();
 
         //$data['password'] = bcrypt($request->password);
+
+        $age = ($request['age']);
+        if($age < 18){
+            Alert::error('Ooops', 'Não é permitido cadastra menor de idade!');
+            return redirect()->back();
+        }
 
         $this->model->create($data);
         //$name = $donor['name'];

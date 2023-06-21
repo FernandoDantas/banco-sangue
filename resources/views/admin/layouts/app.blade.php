@@ -130,11 +130,24 @@
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Donatários
+            </div>
+
+            <li class="nav-item">
+                <a class="nav-link" href="{{route('grantees.index')}}">
+                    <i class="fas fa-fw fa-medkit"></i>
+                    <span> Donatários de sangue</span></a>
+            </li>
+
+           <hr class="sidebar-divider d-none d-md-block">
+
             <div class="sidebar-heading">
                 Sistema
             </div>
 
-            <!-- Nav Item - Pages Collapse Menu -->
+            <!-- Nav Item - Pages Collapse Menu-->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
@@ -144,11 +157,12 @@
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Cadastros gerais:</h6>
-                        <a class="collapse-item" href="buttons.html">Cidades</a>
-                        <a class="collapse-item" href="buttons.html">Estados</a>
-                        <a class="collapse-item" href="buttons.html">Ala/Ramo</a>
-                        <a class="collapse-item" href="buttons.html">Hospitais</a>
-                        <a class="collapse-item" href="cards.html">Tipos de sangue</a>
+                        <a class="collapse-item" href="{{route('profiles.index')}}"> <i class="fas fa-fw fa-address-book"></i> Perfis</a>
+                        <a class="collapse-item" href="buttons.html"><i class="fas fa-fw fa-city"></i> Cidades</a>
+                        <a class="collapse-item" href="{{route('states.index')}}"><i class="fas fa-fw fa-map"></i> Estados</a>
+                        <a class="collapse-item" href="{{route('wards.index')}}"><i class="fas fa-fw fa-church"></i> Ala/Ramo</a>
+                        <a class="collapse-item" href="buttons.html"><i class="fas fa-fw fa-hospital"></i> Hospitais</a>
+                        <a class="collapse-item" href="{{route('types.index')}}"><i class="fas fa-fw fa-heart"></i> Tipos de sangue</a>
                     </div>
                 </div>
             </li>
